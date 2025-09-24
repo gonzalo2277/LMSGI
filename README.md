@@ -1,2 +1,2 @@
 # LMSGI
-Lenguaje de marcas 
+Contiene los ejercicios Lenguaje de marcas 
