@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gonzalo Vereda">
+    <title>EJERCICIO 1 CSS</title>
+    <style>
+        .cta-container {
+            background-image: url('sale.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: scroll;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }.cta-text {
+            color: #333;
+            font-size: 28px;
+            text-align: center;
+            
+        }.cita-text {
+            text-align: center;
+            font-size: 20px;
+            
+        }.cta-button {
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            background-color: #626bb2;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cta-container">
+        <h2 class="cta-text">¡Aprovecha nuestra oferta especial!</h2>
+        <p class="cta-text">Hasta un 40% de descuento en productos seleccionados.</p>
+        <button class="cta-button">Descubrir Ofertas</button>
+    </div>
+</body>
