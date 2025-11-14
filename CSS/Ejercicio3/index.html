@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gonzalo Vereda">
+    <title>EJERCICIO 3 CSS</title>
+    <style>
+        /* css menu */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blanchedalmond;
+            padding: 10px;
+        }
+
+        nav h1 {
+            color: black;
+            padding: 15px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            gap: 28px;
+            padding-right: 15px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+
+        }
+
+        .menu a:hover {
+            background-color: rgb(124, 91, 63);
+        }
+
+        /* css contenido */
+
+        .cta-container {
+            background-image: url('cafeteria.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: scroll;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        .cta-text {
+            color: #333;
+            font-size: 28px;
+            text-align: center;
+
+        }
+
+        .cita-text {
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            background-color: #aa7755;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Coffee</h1>
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Acerca de</a></li>
+        </ul>
+    </nav>
+</body>
+
+<main>
+    <div class="cta-container">
+        <h2 class="cta-text">¡Aprovecha nuestra oferta especial!</h2>
+        <p class="cta-text">Hasta un 40% de descuento en nuestros cafes.</p>
+        <button class="cta-button">Descubrir Ofertas</button>
+    </div>
+</main>
+
+</html>
