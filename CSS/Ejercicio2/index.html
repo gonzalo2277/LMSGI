@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gonzalo Vereda">
+    <title>EJERCICIO 2 CSS</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blanchedalmond;
+            padding: 10px;
+        }
+
+        nav h1 {
+            color: black;
+            padding: 15px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            gap: 28px;
+            padding-right: 15px;
+
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            background-color: black;
+        }
+
+        .menu a:hover {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Coffee</h1>
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</body>
