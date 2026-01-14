@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #343a40;
+}
+
+/* Header y nav*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+nav .logo{
+    font: 1.6em;
+    padding: 25px 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a{
+    font-size: 1.2em;
+    padding: 25px 10px;
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-Home {
+    border-bottom: 3px solid #007bff;
+}
+
+.nav-About {
+    border-bottom: 3px solid #32cd32;
+}
+
+.nav-Services {
+    border-bottom: 3px solid #8a2be2;
+}
+
+.nav-Contact {
+    border-bottom: 3px solid #ffd747;
+}
+
+.nav ul li a:hover {
+    border-bottom: 3px solid #007bff;
+    font-weight: bold;
+}
+
+/* Cta container */
+
+.cta-container {
+    background-color: #e9ecef ;
+    padding: 110px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cta-container h1 {
+    font-size: 2.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-container p {
+    font-size: 1.2em;
+    max-width: 550px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Sección services-container */
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    background-color: #f1f3f5;
+    padding: 34px 0;
+    text-align: center;
+}
+
+.services-container div {
+    width: 30%;
+}
+
+/* Sección contact-container */
+
+.contact-container {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 500px;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f3f5;
+    margin: auto;
+}
+
+.contact-form h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-form input h2 name {
+    margin-bottom:  #32cd32;;
+}
+
+.contact-form input:hover {
+    border-bottom: #007bff;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+
+
