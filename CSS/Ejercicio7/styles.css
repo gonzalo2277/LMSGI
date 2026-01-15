@@ -16,7 +16,7 @@ nav {
 
 nav .logo{
     font: 1.6em;
-    padding: 25px 10px;
+    text-decoration: none;
 }
 
 nav ul {
@@ -57,26 +57,18 @@ nav ul li a{
 .cta-container {
     background-color: #e9ecef ;
     padding: 110px 0;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     text-align: center;
 }
 
 .cta-container h1 {
     font-size: 2.2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 15px;
 }
 
 .cta-container p {
     font-size: 1.2em;
     max-width: 550px;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: auto;
 }
 
@@ -92,6 +84,11 @@ nav ul li a{
 
 .services-container div {
     width: 30%;
+}
+
+.services-container div div {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 /* Sección contact-container */
@@ -114,29 +111,60 @@ nav ul li a{
     margin: auto;
 }
 
-.contact-form h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    text-align: center;
+.contact-form input,
+.contact-form textarea {
+    background-color: #f1f3f5;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 10px;
+    outline: none;
 }
 
-.contact-form input h2 name {
-    margin-bottom:  #32cd32;;
+.contact-form input[name="name"] {
+    border-bottom: 3px solid #32cd32;
 }
 
-.contact-form input:hover {
-    border-bottom: #007bff;
+.contact-form input[name="email"] {
+    border-bottom: 3px solid #8a2be2;
 }
 
 .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
+    border-bottom: 3px solid #ffd747;
 }
 
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-bottom: 3px solid #007bff;
+}
 
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
 
+.contact-form button:hover {
+    background-color: #343a40;
+}
+
+/* footer */
+
+footer {
+    background-color: #f1f3f5;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h3,
+footer small {
+    font-weight: bold;
+}
+
+footer a {
+    font-size: 2em;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
