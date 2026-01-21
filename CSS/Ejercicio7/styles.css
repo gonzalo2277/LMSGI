@@ -55,7 +55,7 @@ nav ul li a{
 /* Cta container */
 
 .cta-container {
-    background-color: #e9ecef ;
+    background-color: #e9ecef;
     padding: 110px 0;
     text-align: center;
 }
@@ -76,14 +76,16 @@ nav ul li a{
 
 .services-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #f1f3f5;
     padding: 34px 0;
     text-align: center;
+    gap: 20px;
 }
 
 .services-container div {
     width: 30%;
+    margin: auto;
 }
 
 .services-container div div {
@@ -98,26 +100,39 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    padding: 50px;
 }
 
 .contact-form {
-    max-width: 500px;
+    width: 500px;
     padding: 20px;
-    align-items: center;
+    align-items: left;
     display: flex;
     flex-direction: column;
     background-color: #f1f3f5;
     margin: auto;
+    justify-content: center;
 }
 
 .contact-form input,
 .contact-form textarea {
     background-color: #f1f3f5;
     border: none;
-    border-bottom: 3px solid transparent;
     padding: 10px;
-    outline: none;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    background-color: #e9ecef;
+}
+.contact-form button:hover {
+    background-color: #007bff;
+}
+
+.contact-form label {
+    font-weight: bold;
+    
 }
 
 .contact-form input[name="name"] {
@@ -132,21 +147,12 @@ nav ul li a{
     border-bottom: 3px solid #ffd747;
 }
 
-.contact-form input:hover,
-.contact-form textarea:hover {
-    border-bottom: 3px solid #007bff;
-}
-
 .contact-form button {
     margin-top: 15px;
     padding: 10px;
     background-color: #007bff;
     color: white;
     border: none;
-}
-
-.contact-form button:hover {
-    background-color: #343a40;
 }
 
 /* footer */
@@ -157,14 +163,12 @@ footer {
     text-align: center;
 }
 
-footer h3,
-footer small {
+footer h3, footer small {
     font-weight: bold;
 }
 
 footer a {
     font-size: 2em;
     text-decoration: none;
-    display: block;
     margin-bottom: 10px;
 }
