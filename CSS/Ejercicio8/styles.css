@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap');
+
+:root {
+    --primary-blue: #074167; /* Azul */ 
+    --dark-blue: #143548; /* Azul oscuro */ 
+    --background-light: #ffebd9; /* Crema */ 
+    --hover-light: #CCB299; /* Marrón */ 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CABECERA */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-blue);
+    padding: 10px 20px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--background-light);
+}
+
+.logo img {
+    transition: transform 0.25s ease;
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    transition: transform 0.25s ease;
+    border-radius: 4px;
+    color: var(--background-light);
+    padding: 4px 5px;
+}
+
+.search input:hover {
+    transform: scale(1.1);
+}
+
+.search button {
+    transition: transform 0.25s ease;
+    transition: color 0.25s ease;
+    color: var(--background-light);
+    padding: 4px 5px;
+}
+
+.search button:hover {
+    transform: scale(1.3);
+    color: var(--hover-light);
+}
+
+/* Sección cta-container */
+
+.cta-container {
+    background-color: var(--background-light);
+    text-align: center;
+    background-image: url('gato fondo.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: sepia(30%);
+}
+
+.cta-container h1 {
+    font-size: 3em;
+    color: var(--dark-blue);
+    padding: 150px;
+}
+
+/* PIE DE PAGINA */
+
+.footer-copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-blue);
+    padding: 20px 20px;
+}
+
+.footer-copy h3 {
+    display: flex;
+    align-items: center;
+    color: var(--background-light);
+}
+
+.footer-copy small {
+    display: flex;
+    align-items: center;
+    color: var(--background-light);
+    flex-direction: column;
+}
+
