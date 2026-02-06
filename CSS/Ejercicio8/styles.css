@@ -116,6 +116,7 @@ footer {
     padding: 20px 20px;
     text-align: center;
     margin-bottom: auto;
+    flex-direction: column;
 }
 
 .footer-copy h3 {
@@ -138,7 +139,9 @@ footer {
 .footer-menu {
     display: flex;
     background-color: var(--dark-blue);
-    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    padding-bottom: 60px;
 }
 
 .footer-menu div {
