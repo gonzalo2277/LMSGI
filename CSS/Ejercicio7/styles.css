@@ -14,6 +14,12 @@ nav {
     background-color: #f8f9fa;
 }
 
+nav button {
+    display: none;
+    border: none;
+    color: green;
+}
+
 nav .logo{
     font: 1.6em;
     text-decoration: none;
@@ -171,4 +177,24 @@ footer a {
     font-size: 2em;
     text-decoration: none;
     margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+
+    nav button{
+        display: block;
+    }
+
+    nav ul li a{
+        display: none;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-container div {
+        width: 100%;
+    }
 }
